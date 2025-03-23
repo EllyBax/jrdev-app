@@ -1,29 +1,53 @@
-# Create T3 App
+# Welcome to JRDev.org
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+JRDev.org is your gateway to professional web development. We're building a supportive community where junior developers can grow, learn, and connect with peers and mentors who share their passion for coding.
 
-## What's next? How do I make an app with this?
+## Our Mission
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+We believe that every developer's journey matters. Whether you're taking your first steps in coding or looking to level up your skills, JRDev.org provides:
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- A supportive community of fellow learners
+- Practical learning resources and tutorials
+- Real-world project opportunities
+- Mentorship connections
+- Career growth guidance
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Technical Stack
 
-## Learn More
+This platform is built with modern web technologies to provide a robust and scalable experience:
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- [Next.js](https://nextjs.org) - React framework for production
+- [NextAuth.js](https://next-auth.js.org) - Authentication for Next.js
+- [Prisma](https://prisma.io) - Type-safe database ORM
+- [Drizzle](https://orm.drizzle.team) - Modern TypeScript ORM
+- [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
+- [tRPC](https://trpc.io) - End-to-end typesafe APIs
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+## Getting Started
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+To start contributing to the platform:
 
-## How do I deploy this?
+1. Clone the repository
+2. Install dependencies with `pnpm install`
+3. Set up your environment variables
+4. Run the development server with `pnpm dev`
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## Join Our Community
+
+We're more than just a platform - we're a community of developers helping each other succeed. Connect with us to:
+
+- Share your learning journey
+- Get help with coding challenges
+- Contribute to real projects
+- Network with other developers
+
+## Deployment
+
+The platform can be deployed using:
+- [Vercel](https://create.t3.gg/en/deployment/vercel)
+- [Netlify](https://create.t3.gg/en/deployment/netlify)
+- [Docker](https://create.t3.gg/en/deployment/docker)
+
+---
+
+Built with ❤️ for the next generation of developers
