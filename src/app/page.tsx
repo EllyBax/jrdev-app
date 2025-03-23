@@ -1,37 +1,113 @@
 import Link from "next/link";
 
+const links = [
+    { name: "About", url: "/about" },
+    { name: "Contact", url: "/contact" },
+    { name: "Team", url: "/team" },
+    { name: "Members", url: "/members" }
+];
+
+const projects = [
+    { name: "TMS", url: "/projects/task-management" },
+    { name: "E-commerce", url: "/projects/ecommerce" },
+    { name: "Social Media Dashboard", url: "/projects/social-dashboard" },
+    { name: "Weather", url: "/projects/weather-app" },
+    { name: "Portfolio Builder", url: "/projects/portfolio" },
+    { name: "E-commerce", url: "/projects/ecommerce" },
+    { name: "Social Media Dashboard", url: "/projects/social-dashboard" },
+    { name: "Weather", url: "/projects/weather-app" },
+    { name: "Portfolio Builder", url: "/projects/portfolio" }
+];
+
+const socials = [
+    { name: "GitHub", url: "https://github.com/jrdev" },
+    { name: "LinkedIn", url: "https://linkedin.com/in/jrdev" },
+    { name: "Twitter", url: "https://twitter.com/jrdev" },
+    { name: "Discord", url: "https://discord.gg/jrdev" }
+];
+
 export default function HomePage() {
-	return (
-		<main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-			<div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-				<h1 className="font-extrabold text-5xl text-white tracking-tight sm:text-[5rem]">
-					Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-				</h1>
-				<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-					<Link
-						className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-						href="https://create.t3.gg/en/usage/first-steps"
-						target="_blank"
-					>
-						<h3 className="font-bold text-2xl">First Steps →</h3>
-						<div className="text-lg">
-							Just the basics - Everything you need to know to set up your
-							database and authentication.
-						</div>
-					</Link>
-					<Link
-						className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-						href="https://create.t3.gg/en/introduction"
-						target="_blank"
-					>
-						<h3 className="font-bold text-2xl">Documentation →</h3>
-						<div className="text-lg">
-							Learn more about Create T3 App, the libraries it uses, and how to
-							deploy it.
-						</div>
-					</Link>
-				</div>
-			</div>
-		</main>
-	);
+    return (
+        <main className="min-h-screen">
+            <div className="mx-auto max-w-[800px] p-4">
+                <pre className="w-full text-center font-mono">{`
+	   ░▒▓█▓▒ ▒▓███████▓▒░ ▒▓███████▓▒░ ▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░ 
+       ░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
+       ░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░       ░▒▓█▓░░▓█▓▒░  
+       ░▒▓█▓▒ ▒▓███████▓▒  ▒▓█▓▒░░▒▓█▓▒ ▒▓██████▓▒░  ░▒▓█▓░░▓█▓▒░  
+░▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░        ░▒▓█░░█▓▒░   
+░▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░        ░▒▓█░░█▓▒░   
+ ░▒▓██████▓▒░ ▒▓█▓▒░░▒▓█▓▒ ▒▓███████▓▒░ ▒▓████████▓▒░  ░▒▓██▓▒░    
+                `}</pre>
+
+
+                <div className="flex items-center justify-center gap-6 mb-8">
+                    <Link href="/login" className="text-amber-200 hover:text-[#b0b4ba] transition-colors">
+                        Login
+                    </Link>
+                    <Link href="/register" className="px-4 py-2 bg-secondary-bg border rounded-lg hover:bg-[#212122] transition-all">
+                        Sign Up
+                    </Link>
+                </div>
+                <hr className="my-6" />
+
+                <div className="grid grid-cols-4 gap-2 mb-8">
+                    <div className="col-span-1 border-r p-2">
+                        <h2 className="text-lg font-semibold mb-2">Pages</h2>
+                        <hr className="my-2" />
+                        <div className="flex flex-col gap-3">
+                            {links.map((link, index) => (
+                                <Link
+                                    key={index}
+                                    href={link.url}
+                                    className="hover:underline transition-all"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="col-span-2 border-r p-2">
+                        <h2 className="text-lg font-semibold mb-2">Projects</h2>
+                        <hr className="my-2" />
+                        <div className="flex flex-wrap gap-2">
+                            {projects.map((project, index) => (
+                                <Link
+                                    key={index}
+                                    href={project.url}
+                                    className="px-4 py-2 bg-[#212122] rounded-full border border-transparent hover:border-amber-200 transition-all"
+                                >
+                                    {project.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="col-span-1 p-2">
+                        <h2 className="text-lg font-semibold mb-2">Social</h2>
+                        <hr className="my-2" />
+                        <div className="flex flex-col gap-3">
+                            {socials.map((social, index) => (
+                                <Link
+                                    key={index}
+                                    href={social.url}
+                                    className="hover:underline transition-all"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {social.name}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer className="text-center text-secondary-text fixed bottom-0 w-[800px] mx-auto">
+                    <p>jrdev.org 2025&copy;</p>
+                </footer>
+            </div>
+        </main>
+    );
 }
