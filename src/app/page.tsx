@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Footer from "./components/Footer";
 
 const links = [
     { name: "About", url: "/about" },
     { name: "Contact", url: "/contact" },
     { name: "Team", url: "/team" },
-    { name: "Members", url: "/members" }
+    { name: "Members", url: "/members" },
+    { name: "Sponsors", url: "/sponsors" }
 ];
 
 const projects = [
@@ -30,22 +32,23 @@ export default function HomePage() {
     return (
         <main className="min-h-screen">
             <div className="mx-auto max-w-[800px] p-4">
-                <pre className="w-full text-center font-mono">{`
-	   ░▒▓█▓▒ ▒▓███████▓▒░ ▒▓███████▓▒░ ▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░ 
-       ░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░ 
-       ░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░       ░▒▓█▓░░▓█▓▒░  
-       ░▒▓█▓▒ ▒▓███████▓▒  ▒▓█▓▒░░▒▓█▓▒ ▒▓██████▓▒░  ░▒▓█▓░░▓█▓▒░  
-░▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░        ░▒▓█░░█▓▒░   
-░▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░░▒▓█▓▒ ▒▓█▓▒░        ░▒▓█░░█▓▒░   
- ░▒▓██████▓▒░ ▒▓█▓▒░░▒▓█▓▒ ▒▓███████▓▒░ ▒▓████████▓▒░  ░▒▓██▓▒░    
-                `}</pre>
-
-
+                <pre className="w-full text-center font-mon">
+                    {`
+⣿⣿⣿⣿⣿⣿⣿⣿⢿⡿⣿⣿⢿⣿⣿⣿⣿⢿⣿⣿⡿⣿⣿⣿⣿⡿⣿⣿⡿⣿⣿⣿⣿⣿⡿⣿⣿⢿⡿⣿⣿⡿⣿⢿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⡷⢀⡐⢿⡿⢀⠀⣀⣀⡀⡸⠾⡷⠆⡀⣀⣀⣀⢀⠿⢿⡆⢀⢀⣀⣀⣀⣐⣾⡿⢀⡀⡿⣿⠆⣀⠲⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣟⠠⢌⣿⣿⠡⡈⣿⣟⡇⠤⣹⣿⣁⠌⣽⣿⣭⠠⣸⣿⡅⡡⣩⣿⣿⣿⣿⣿⣿⣄⠠⢻⣿⠣⣀⣽⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⠾⠠⠔⣾⡷⠠⠴⠾⠿⠦⠰⣴⡷⠆⠔⠶⡷⠶⠠⢰⢾⠆⠤⠴⠾⠿⠛⢿⣿⣿⠆⠢⢸⣾⠠⠐⣾⣿⣿⣿
+⣿⣿⣟⡏⠛⢹⣿⣿⠐⢊⣽⣿⠑⡀⣶⣤⡆⠚⣹⣿⣁⠊⣟⣿⣟⠐⣩⣿⡋⡐⣰⣦⣶⣿⣿⣿⣿⣯⡅⢺⣿⠂⣭⣿⣿⣿⣿
+⣿⣿⣿⠇⠒⢸⢾⡷⠐⠢⢾⡷⠐⠄⣿⢾⠆⠒⠴⡷⠆⠂⡿⣟⠾⠐⢰⢾⡇⠐⠴⣷⣿⣿⣿⣿⣿⡷⠆⢺⣿⠂⡷⣿⣿⣿⣿
+⣿⣿⣿⣻⣀⠈⠉⠉⠀⣼⣿⣿⠁⡀⣿⣿⡃⢈⣹⣿⡉⠀⠉⠉⠉⠀⣿⣿⡅⡁⠉⠉⠉⠉⢉⣿⣿⣿⣟⠈⠉⣰⣿⣿⣿⣿⣿
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+                    `}
+                </pre>
                 <div className="flex items-center justify-center gap-6 mb-8">
-                    <Link href="/login" className="text-amber-200 hover:text-[#b0b4ba] transition-colors">
+                    <Link href="/login" className="text-[#d5dce6] hover:text-[#0a0a0a] hover:bg-amber-300 bg-amber-400/40 transition-all px-4 py-2 rounded-lg border border-[#363a3f]">
                         Login
                     </Link>
-                    <Link href="/register" className="px-4 py-2 bg-secondary-bg border rounded-lg hover:bg-[#212122] transition-all">
+                    <Link href="/register" className="px-4 py-2 bg-[#363a3f] border rounded-lg hover:bg-[#212122] transition-all">
                         Sign Up
                     </Link>
                 </div>
@@ -103,10 +106,7 @@ export default function HomePage() {
                     </div>
                 </div>
 
-
-                <footer className="text-center text-secondary-text fixed bottom-0 w-[800px] mx-auto">
-                    <p>jrdev.org 2025&copy;</p>
-                </footer>
+<Footer/>
             </div>
         </main>
     );
