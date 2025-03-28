@@ -1,7 +1,4 @@
 import Link from "next/link";
-import Nav from "../../../components/Nav";
-import Footer from "../../../components/Footer";
-
 const teamMembers = [
     {
         id: 1,
@@ -106,8 +103,8 @@ const teamMembers = [
     }
 ];
 
-export default function TeamPage({ params }: { params: { id: string } }) {
-    const member = teamMembers.find(m => m.id === parseInt(params.id))
+export default function TeamPage({ params }: { params: { id: number } }) {
+    const member = teamMembers.find(m => m.id === (params.id))
 
     if (!member) {
         return (
