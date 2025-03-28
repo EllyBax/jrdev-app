@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import Nav from '../components/Nav';
-import Footer from '../components/Footer';
+import Nav from '../../components/Nav';
+import Footer from '../../components/Footer';
 
 const sponsorTiers = [
     {
@@ -66,10 +66,7 @@ export default function BecomeSponsorPage() {
     };
 
     return (
-        <main className="min-h-screen">
-            <div className="mx-auto max-w-[800px] p-4">
-                <Nav />
-
+<>
                 <div className="text-center mb-12">
                     <h1 className="text-3xl font-bold mb-4">Become a Sponsor</h1>
                     <p className="text-gray-300 mb-8">
@@ -208,9 +205,6 @@ export default function BecomeSponsorPage() {
                         </button>
                     </div>
                 </form>
-
-                <Footer />
-            </div>
-        </main>
+</>
     );
 }

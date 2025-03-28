@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
 
 const teamMembers = [
     {
@@ -91,10 +91,7 @@ const teamMembers = [
 
 export default function TeamPage() {
     return (
-        <main className="min-h-screen">
-            <div className="mx-auto max-w-[800px] p-4">
-                <Nav />
-
+<>
                 <h1 className="text-3xl font-bold mb-4">Our Team</h1>
                 <hr className="my-6" />
 
@@ -123,9 +120,6 @@ export default function TeamPage() {
                         </Link>
                     ))}
                 </div>
-
-                <Footer />
-            </div>
-        </main>
+</>
     );
 }

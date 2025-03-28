@@ -1,12 +1,9 @@
-import Nav from "../components/Nav";
-import Footer from "../components/Footer";
+import Nav from "../../components/Nav";
+import Footer from "../../components/Footer";
 
 export default function ContactPage() {
     return (
-        <main className="min-h-screen">
-            <div className="mx-auto max-w-[800px] p-4">
-                <Nav />
-
+<>
                 <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
                 <hr className="my-6" />
 
@@ -91,9 +88,6 @@ export default function ContactPage() {
                         </div>
                     </div>
                 </div>
-
-                <Footer />
-            </div>
-        </main>
+</>
     );
 }
