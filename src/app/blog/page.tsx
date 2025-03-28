@@ -1,6 +1,8 @@
 'use client';
 
 import Link from "next/link";
+import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 interface BlogPost {
   id: number;
@@ -99,21 +101,23 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen p-8">
+    <div className="min-h-screen bg-[#0f0f0f] p-8">
       <div className="max-w-6xl mx-auto">
+        <Nav/>
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4">Welcome to Our Blog</h1>
+          <h1 className="text-5xl font-bold text-amber-200 mb-4">Welcome to Our Blog</h1>
           <p className="text-xl text-amber-200/80">
             Explore our latest articles and insights about development, technology, and more.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {mockBlogPosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

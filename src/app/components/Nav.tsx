@@ -8,6 +8,7 @@ const links = [
     { name: "Contact", url: "/contact" },
     { name: "Team", url: "/team" },
     { name: "Members", url: "/members" },
+    { name: "Blog", url: "/blog" },
     { name: "Sponsors", url: "/sponsors" }
 ];
 
@@ -15,7 +16,7 @@ export default function Nav() {
     const currentPage = usePathname()
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="relative mb-8">
+        <div className="sticky top-0 backdrop-blur-md mb-8">
         <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex items-center gap-2 text-amber-200 hover:text-[#b0b4ba] cursor-pointer transition-colors"
@@ -44,6 +45,7 @@ export default function Nav() {
                         key={index}
                         href={link.url}
                         className="block px-4 py-2 hover:bg-amber-200/10 transition-colors"
+                        onClick={() => setIsOpen(false)}
                     >
                         {link.name}
                     </Link>
