@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Footer from "./components/Footer";
+import Image from "next/image";
 
 const links = [
     { name: "About", url: "/about" },
@@ -33,7 +34,7 @@ export default function HomePage() {
     return (
         <main className="min-h-screen">
             <div className="mx-auto max-w-[800px] p-4">
-                <pre className="w-full text-center font-mon">
+                {/* <pre className="w-full text-center font-mon">
                     {`
 ⣿⣿⣿⣿⣿⣿⣿⣿⢿⡿⣿⣿⢿⣿⣿⣿⣿⢿⣿⣿⡿⣿⣿⣿⣿⡿⣿⣿⡿⣿⣿⣿⣿⣿⡿⣿⣿⢿⡿⣿⣿⡿⣿⢿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⡷⢀⡐⢿⡿⢀⠀⣀⣀⡀⡸⠾⡷⠆⡀⣀⣀⣀⢀⠿⢿⡆⢀⢀⣀⣀⣀⣐⣾⡿⢀⡀⡿⣿⠆⣀⠲⣿⣿⣿
@@ -44,9 +45,10 @@ export default function HomePage() {
 ⣿⣿⣿⣻⣀⠈⠉⠉⠀⣼⣿⣿⠁⡀⣿⣿⡃⢈⣹⣿⡉⠀⠉⠉⠉⠀⣿⣿⡅⡁⠉⠉⠉⠉⢉⣿⣿⣿⣟⠈⠉⣰⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
                     `}
-                </pre>
+                </pre> */}
+                <Image alt={"Jrdev logo"} src={"/jrdev-logo-no-bg.png"} height={150} width={500} className="mx-auto object-fill"/>
                 <div className="flex items-center justify-center gap-6 mb-8">
-                    <Link href="/login" className="text-[#d5dce6] hover:text-[#0a0a0a] hover:bg-amber-300 bg-amber-400/40 transition-all px-4 py-2 rounded-lg border border-[#363a3f]">
+                    <Link href="/login" className="text-[#d5dce6] hover:text-[#0a0a0a] hover:bg-amber-300 transition-all px-4 py-2 rounded-lg border border-[#363a3f]">
                         Login
                     </Link>
                     <Link href="/register" className="px-4 py-2 bg-[#363a3f] border rounded-lg hover:bg-[#212122] transition-all">
