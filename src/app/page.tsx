@@ -6,7 +6,8 @@ const links = [
     { name: "Contact", url: "/contact" },
     { name: "Team", url: "/team" },
     { name: "Members", url: "/members" },
-    { name: "Sponsors", url: "/sponsors" }
+    {name: "Blog", url: "/blog"},
+    { name: "Sponsors", url: "/sponsors" },
 ];
 
 const projects = [
