@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Courier_Prime } from "next/font/google";
 
 export const metadata: Metadata = {
 	title: "jrdev - Developer Platform",
@@ -9,16 +9,18 @@ export const metadata: Metadata = {
 	icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const geist = Geist({
+
+const courier = Courier_Prime({
+	weight: ["400", "700"],
 	subsets: ["latin"],
-	variable: "--font-geist-sans",
+	variable: "--font-courier-prime",
 });
 
 export default function RootLayout({
 	children,
 }: Readonly<{ children: React.ReactNode }>) {
 	return (
-		<html lang="en" className={`${geist.variable} bg-[#0a0a0a] text-amber-200`}>
+		<html lang="en" className={`${courier.variable} bg-[#0a0a0a] text-amber-200`}>
 			<body>{children}</body>
 		</html>
 	);
