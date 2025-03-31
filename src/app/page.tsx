@@ -36,7 +36,7 @@ export default function HomePage() {
       <div className="mx-auto max-w-[800px] p-4">
         <Image
           alt={"Jrdev logo"}
-          src={"/jrdev-logo-no-bg.png"}
+          src={"/assets/images/jrdev-logo-no-bg.png"}
           height={150}
           width={500}
           className="mx-auto object-fill"

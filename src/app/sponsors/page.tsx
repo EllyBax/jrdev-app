@@ -17,8 +17,8 @@ const sponsorTiers = [
 			"Priority networking events",
 		],
 		sponsors: [
-			{ name: "Tech Giant Corp", logo: "/sponsors/placeholder.svg" },
-			{ name: "Innovation Labs", logo: "/sponsors/placeholder.svg" },
+			{ name: "Tech Giant Corp", logo: "/assets/sponsors/placeholder.svg" },
+			{ name: "Innovation Labs", logo: "/assets/sponsors/placeholder.svg" },
 		],
 	},
 	{
