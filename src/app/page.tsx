@@ -32,7 +32,7 @@ const socials = [
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-black text-[#d5dce6]">
+    <main className="min-h-screen text-[#d5dce6]">
       <div className="mx-auto max-w-[800px] p-4">
         <Image
           alt={"Jrdev logo"}

@@ -101,7 +101,7 @@ const BlogCard = ({ post }: { post: BlogPost }) => {
 
 export default function BlogPage() {
   return (
-    <div className="min-h-screen bg-[#0f0f0f] p-8">
+    <div className="min-h-screen p-8">
       <div className="max-w-6xl mx-auto">
         <Nav/>
         <div className="text-center mb-12">
