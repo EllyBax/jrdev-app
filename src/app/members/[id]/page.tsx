@@ -121,7 +121,7 @@ export default function MemberDetailPage() {
 		return (
 			<main className="min-h-screen">
 				<div className="mx-auto max-w-[800px] p-4">
-					<Nav />
+					{/* <Nav /> */}
 					<div className="py-12 text-center">
 						<h1 className="font-bold text-3xl text-amber-200">
 							Member Not Found
@@ -139,7 +139,7 @@ export default function MemberDetailPage() {
 	return (
 		<main className="min-h-screen">
 			<div className="mx-auto max-w-[800px] p-4">
-				<Nav />
+				{/* <Nav /> */}
 
 				<div className="rounded-lg border border-amber-200/20 bg-[#212122] p-8 transition-all hover:border-amber-200 hover:shadow-amber-200/20 hover:shadow-lg">
 					<div className="grid grid-cols-1 gap-8 md:grid-cols-2">

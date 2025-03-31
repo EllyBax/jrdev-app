@@ -109,11 +109,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-        
-        <div className="my-6 text-center">
-          <span className="text-amber-300">•</span>
-        </div>
-        
         <Footer />
       </div>
     </main>

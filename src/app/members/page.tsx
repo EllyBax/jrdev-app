@@ -240,7 +240,7 @@ export default function MembersPage() {
 	return (
 		<main className="min-h-screen">
 			<div className="mx-auto max-w-[1200px] p-4">
-				<Nav />
+				{/* <Nav /> */}
 
 				<div className="flex items-center justify-between">
 					<h1 className="mb-4 font-bold text-3xl">Members</h1>

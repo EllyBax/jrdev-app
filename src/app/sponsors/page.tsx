@@ -58,7 +58,7 @@ export default function SponsorsPage() {
 	return (
 		<main className="min-h-screen">
 			<div className="mx-auto max-w-[1200px] p-4">
-				<Nav />
+				{/* <Nav /> */}
 
 				<div className="mb-12 text-center">
 					<h1 className="mb-4 font-bold text-3xl">Our Sponsors</h1>

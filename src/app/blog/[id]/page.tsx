@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
+import Footer from '@/app/components/Footer';
 
 interface BlogPost {
   id: number;
@@ -162,8 +163,6 @@ const BlogPost = () => {
             <div className="space-y-6 text-amber-200/90">
               <section>
                 <h2 className="text-2xl font-semibold text-amber-200 mb-4"
-								onMouseEnter={() => setShowHash(true)}
-								onMouseLeave={() => setShowHash(false)}
 								>Introduction to AI in Web Development</h2>
                 <p className="leading-relaxed">
                   The integration of artificial intelligence into web development has been one of the most significant technological advancements in recent years. As we move forward, AI continues to reshape how we approach web development, making processes more efficient and outcomes more effective.
@@ -172,8 +171,6 @@ const BlogPost = () => {
               
               <section>
                 <h2 className="text-2xl font-semibold text-amber-200 mb-4"
-								onMouseEnter={() => setShowHash(true)}
-								onMouseLeave={() => setShowHash(false)}
 								>Key Areas of AI Impact</h2>
                 <ul className="list-disc list-inside space-y-4 ml-4">
                   <li>Automated Code Generation</li>
@@ -185,8 +182,6 @@ const BlogPost = () => {
 
               <section>
                 <h2 className="text-2xl font-semibold text-amber-200 mb-4"
-								onMouseEnter={() => setShowHash(true)}
-								onMouseLeave={() => setShowHash(false)}
 								>The Role of Machine Learning</h2>
                 <p className="leading-relaxed">
                   Machine learning algorithms are becoming increasingly sophisticated in understanding user behavior and adapting websites accordingly. This leads to more personalized and engaging web experiences that can significantly improve user satisfaction and conversion rates.
@@ -195,8 +190,6 @@ const BlogPost = () => {
 
               <section>
                 <h2 className="text-2xl font-semibold text-amber-200 mb-4"
-								onMouseEnter={() => setShowHash(true)}
-								onMouseLeave={() => setShowHash(false)}
 								>Future Implications</h2>
                 <p className="leading-relaxed">
                   As AI continues to evolve, we can expect to see even more revolutionary changes in web development. From advanced natural language processing to automated design systems, the possibilities are endless. Developers who embrace these technologies will be well-positioned for the future of web development.
@@ -205,8 +198,6 @@ const BlogPost = () => {
 
               <section>
                 <h2 className="text-2xl font-semibold text-amber-200 mb-4"
-								onMouseEnter={() => setShowHash(true)}
-								onMouseLeave={() => setShowHash(false)}
 								>Conclusion</h2>
                 <p className="leading-relaxed">
                   The fusion of AI and web development is not just a trend but a fundamental shift in how we create and maintain web applications. As we look to the future, it's clear that AI will continue to play an increasingly important role in shaping the web development landscape.
@@ -215,6 +206,7 @@ const BlogPost = () => {
             </div>
           </div>
         </article>
+      <Footer/>
       </main>
     </div>
   );

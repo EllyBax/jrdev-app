@@ -103,7 +103,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen p-8">
       <div className="max-w-6xl mx-auto">
-        <Nav/>
+        {/* <Nav/> */}
         <div className="text-center mb-12">
           <h1 className="text-5xl font-bold text-amber-200 mb-4">Welcome to Our Blog</h1>
           <p className="text-xl text-amber-200/80">

@@ -7,7 +7,7 @@ export default function MinPagesLayout({
 	return (
 		<main className="min-h-screen">
 			<div className="mx-auto max-w-[800px] p-4">
-				<Nav />
+				{/* <Nav /> */}
 				{children}
 				<Footer />
 			</div>

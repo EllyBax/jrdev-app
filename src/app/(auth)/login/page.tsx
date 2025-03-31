@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/app/components/Footer";
 import Nav from "@/app/components/Nav";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -39,8 +40,8 @@ export default function LoginPage() {
 
 	return (
 		<>
-			<Nav />
-			<main className="flex min-h-[90vh] items-center justify-center">
+			{/* <Nav /> */}
+			<main className="flex min-h-[80vh] items-center justify-center">
 				<div className="w-full max-w-md rounded-lg border border-amber-200/20 bg-[#212122] p-6 shadow-lg">
 					<h1 className="mb-6 text-center font-bold text-2xl text-amber-200">
 						Welcome Back to jrdev
@@ -109,6 +110,7 @@ export default function LoginPage() {
 					</div>
 				</div>
 			</main>
+				<Footer/>
 		</>
 	);
 }
